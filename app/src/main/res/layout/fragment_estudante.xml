@@ -42,9 +42,11 @@
         android:layout_below="@id/nome"
         android:layout_alignParentRight="true"
         android:paddingHorizontal="50sp"
+        android:inputType="number"
         />
 
     <Button
+        android:id="@+id/bt_registro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/bt_estudante"
