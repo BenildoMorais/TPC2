@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".fragments.EstudanteFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/txt"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="@string/registro"
+        android:textSize="32dp"
+        android:layout_marginVertical="30px"
+        android:textAlignment="center"
+        />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nome"
+        android:layout_below="@+id/txt"
+        />
+
+    <EditText
+        android:id="@+id/curso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/curso"
+        android:layout_below="@+id/nome"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/idade"
+        />
+
+    <EditText
+        android:id="@+id/idade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/idade"
+        android:layout_below="@id/nome"
+        android:layout_alignParentRight="true"
+        android:paddingHorizontal="50sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_estudante"
+        android:layout_below="@+id/curso"
+        android:layout_marginHorizontal="50sp"
+        />
+
+
+</RelativeLayout>
