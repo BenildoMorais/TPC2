@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
+import java.util.ArrayList;
+
 import mz.ac.isutc.lecc.mt2.tpc2.Armazenamento;
 import mz.ac.isutc.lecc.mt2.tpc2.R;
 import mz.ac.isutc.lecc.mt2.tpc2.databinding.FragmentListBinding;
@@ -17,12 +19,15 @@ public class ListFragment extends Fragment {
 
     private FragmentListBinding binding;
 
+    private ArrayList controle;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentListBinding.inflate(inflater,container,false);
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, Armazenamento.listar);
+
+        ArrayAdapter arrayAdapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, Armazenamento.lista);
         binding.listView.setAdapter(arrayAdapter);
 
         return binding.getRoot();

@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.viewPage.setAdapter(adapter);
 
+
         binding.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

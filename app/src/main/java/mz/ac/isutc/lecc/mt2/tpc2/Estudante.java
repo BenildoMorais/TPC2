@@ -26,6 +26,18 @@ public class Estudante {
         return idade;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
     @NonNull
     @Override
     public String toString() {
